@@ -1,0 +1,70 @@
+@import url('http://fonts.cdnfonts.com/css/ds-digital');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+}
+.calculator{
+    border: 2px solid #47476b;
+    padding: 5px;
+    background: black;
+    width: 320px;
+}
+#upperDisplay{
+    min-height: 20px;
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 20px;
+    color: orange;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+#display{
+    font-size: 29px;
+    font-family: 'DS-Digital', sans-serif;
+    color: white;
+    text-align: right;
+    line-height: 35px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.input{
+    position: relative;
+    font-size: 0 !important;
+}
+.input button{
+    position: relative;
+    height: 65px;
+    width: 80px;
+    color: white;
+    outline: 1px solid black;
+    border: none;
+    background: #4d4d4d;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+    cursor: pointer;
+}
+.large-btn{
+    width: 160px !important;
+}
+#equals{
+    background: rgb(0, 68, 102) !important;
+    height: 130px !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.input button:hover{
+    color: black;
+    outline: 0.05em solid grey;
+    z-index: 3;
+}
